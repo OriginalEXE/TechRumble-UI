@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+
+  node:
+    container_name: techrumble-ui
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '8080:8080'
+    environment:
+      - NODE_ENV=development
+    command: npm run start

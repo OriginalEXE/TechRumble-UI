@@ -1,0 +1,5 @@
+chrome >= 55
+edge >= 15
+firefox >= 56
+ios >= 10
+safari >= 10

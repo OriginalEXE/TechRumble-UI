@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "corejs": "corejs@2",
+      "useBuiltIns": "usage"
+    }],
+    ["@babel/preset-react",
+      {
+        "pragma": "h",
+        "pragmaFrag": "Fragment"
+      }
+    ],
+    ["linaria/babel"]
+  ],
+  "plugins": ["@babel/plugin-syntax-dynamic-import"]
+}
